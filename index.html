@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="script.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="side" style="margin: 20px;">
+
+    <ul class="nav nav-pills">
+      <li class="nav-item" onclick="navigator.List()">
+        <a class="nav-link active" aria-current="page" href="#">List</a>
+      </li>
+      <li class="nav-item" onclick="navigator.AboutUs()">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="container-lg content">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Object Detection -->
+      <div class="col">
+        <div class="card" onclick="navigator.ObjectDetection()">
+          <img src="./assets/Detected-with-YOLO--Schreibtisch-mit-Objekten.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Object Detection</h5>
+            <p class="card-text"> การตรวจจับและระบุวัตถุในภาพหรือวิดีโอ พร้อมบอกตำแหน่งและชนิดของวัตถุ.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" onclick="navigator.ImageSegmentation()">
+          <img src="./assets/imageSegment.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Image Segmentation</h5>
+            <p class="card-text">การแบ่งภาพออกเป็นส่วนต่าง ๆ ตามความเหมือนกันของพิกเซล</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" onclick="navigator.InteractiveImageSegmentation()">
+          <img src="./assets/Interactivesegmentation.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Interactive Image Segmentation</h5>
+            <p class="card-text">การแบ่งส่วนภาพที่ผู้ใช้มีส่วนร่วมในการกำหนดขอบเขตของวัตถุในภาพ</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" onclick="navigator.HandLandmarksDetection()">
+          <img src="./assets/handland.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Hand Landmarks Detection</h5>
+            <p class="card-text">การตรวจจับและระบุตำแหน่งจุดสำคัญต่าง ๆ บนมือ เช่น ข้อนิ้ว ข้อมือ หรือปลายนิ้ว</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" onclick="navigator.PoseLandmarkDetection()">
+          <img src="./assets/post.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">PoseLandmarkDetection</h5>
+            <p class="card-text">การตรวจจับและระบุตำแหน่งจุดสำคัญบนร่างกายของมนุษย์ เช่น หัว ไหล่ ข้อศอก เข่า
+              และข้อต่อต่าง </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" onclick="navigator.AboutUs()">
+          <img src="./assets/members.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Member</h5>
+            <p class="card-text">สมาชิก</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="margin-bottom" style="margin-bottom: 30px;"></div>
+
+
+
+</body>
+
+</html>
